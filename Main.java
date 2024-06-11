@@ -40,6 +40,7 @@ public class Main {
 
     System.out.println();
 
+    //finds the lowest and higest scores
     int lowScore = 0;
     int highScore = 0;
     for(int score : totalScore){
@@ -53,5 +54,16 @@ public class Main {
     System.out.println(lowScore+" students got a score 1000 or lower.");
     System.out.println();
     System.out.println(highScore+" students got a score above 1000.");
+    System.out.println();
+
+    int harvardScore = 0;
+    for(int score : totalScore){
+      if(score >= 1400){
+        harvardScore++;
+      }
+    }
+    System.out.println(harvardScore+" students can get into harvard");
+
+    
   }
 }
