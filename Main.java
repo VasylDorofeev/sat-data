@@ -41,11 +41,17 @@ public class Main {
     System.out.println();
 
     int lowScore = 0;
+    int highScore = 0;
     for(int score : totalScore){
       if(score >= 1000){
+        lowScore++;
       }
-      lowScore++;
+      else{
+        highScore++;
+      }
     }
-    System.out.println(lowScore+" students got a low score.");
+    System.out.println(lowScore+" students got a score 1000 or lower.");
+    System.out.println();
+    System.out.println(highScore+" students got a score above 1000.");
   }
 }
